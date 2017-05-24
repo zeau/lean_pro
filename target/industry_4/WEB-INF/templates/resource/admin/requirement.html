@@ -1,0 +1,115 @@
+<link rel="import" href="public-head.html?__inline">
+
+
+
+
+
+
+
+<div class="tpl-page-container tpl-page-header-fixed">
+
+
+    <link rel="import" href="public-slider.html?__inline">
+
+
+
+
+    <div class="tpl-content-wrapper">
+        <div class="tpl-content-page-title">
+            用户需求列表页
+        </div>
+        <div class="tpl-portlet-components">
+            <div class="portlet-title">
+                <div class="caption font-green bold">
+                    <span class="am-icon-code"></span> 需求
+                </div>
+
+            </div>
+            <div class="tpl-portlet-components">
+
+                <div class="tpl-block ">
+
+                    <div class="am-g tpl-amazeui-form">
+
+
+                        <div class="am-u-sm-12 am-u-md-9">
+                            <form class="am-form am-form-horizontal">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-5 am-form-label">姓名 / Name</label>
+                                    <div class="am-u-sm-7 mem-details">
+                                        <span>郑磊</span>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-sex" class="am-u-sm-5 am-form-label">性别 / Sex</label>
+                                    <div class="am-u-sm-7 mem-details">
+                                        <span>男</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-5 am-form-label">电话 / Telephone</label>
+                                    <div class="am-u-sm-7 mem-details">
+                                        <span>1551947281</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="am-form-group">
+                                    <label for="user-state" class="am-u-sm-5 am-form-label">需求 / requirement</label>
+                                    <div class="am-u-sm-7 mem-details">
+                                        <div class="" style="width:100%;height:100%;word-break:break-all;font-size:14px;">你们快审核我的吧！我已经等了，好多天了，
+                                            ，你们要是再在一天不审核我的话，我就不加入了</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="am-form-group">
+                                    <label for="user-intro" class="am-u-sm-5 am-form-label">管理员回复 / AdminReplay</label>
+                                    <div class="am-u-sm-7 mem-details">
+                                        <textarea class="" rows="5" id="user-replay" placeholder="输入您的嘱咐"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3" style="text-align:center;">
+                                        <button type="button" class="am-btn am-btn-primary">保存</button><button type="button" class="am-btn am-btn-primary re-back-btn" style="margin-left:30px;">返回</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+    $(function(){
+        $(".re-back-btn").click(function(){
+            window.open("requir-list.html")
+        });
+    })
+</script>
+</body>
+
+</html>
