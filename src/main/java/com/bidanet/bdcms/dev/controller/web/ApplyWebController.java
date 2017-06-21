@@ -18,7 +18,7 @@ public class ApplyWebController  {
     @Autowired
     ApplyService applyService;
 
-    @RequestMapping("/findApplyList")
+    @RequestMapping("/saveApply")
     @ResponseBody
     public ApiResult<String> saveApply(){
 
@@ -26,10 +26,19 @@ public class ApplyWebController  {
         apply.setDailyName("dddtest");
         applyService.insertT(apply);
 
-        return ApiResult.success("DAFDA!");
+        return ApiResult.success("保存成功!");
     }
 
 
+
+    @RequestMapping("/findApplyList")
+    @ResponseBody
+    public ApiResult<Apply> findApplyList(Long id){
+
+       Apply apply = applyService.get(id);
+
+        return ApiResult.success(apply);
+    }
 
 
 
