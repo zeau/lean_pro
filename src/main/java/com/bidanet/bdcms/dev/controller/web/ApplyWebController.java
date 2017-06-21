@@ -25,7 +25,6 @@ public class ApplyWebController  {
         Apply apply = new Apply();
         apply.setDailyName("dddtest");
         applyService.insertT(apply);
-
         return ApiResult.success("保存成功!");
     }
 
